@@ -1,0 +1,13 @@
+Injector:
+  RequestProcessor:
+    properties:
+      filters:
+        - '%$FakeManagerRequestFilter'
+
+TestSessionController:
+  extensions:
+    - FakeTestSessionControllerExtension
+
+TestSessionEnvironment:
+  extensions:
+    - FakeTestSessionEnvironmentExtension
